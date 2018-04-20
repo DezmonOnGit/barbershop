@@ -7,37 +7,23 @@
 <body>
 	<div class="wrapper">
 		<header class="header header_size header__btn_text">
-			<a href="index.html">
-				<div class="header__btn header__btn_size">Главная<img src="img/header_border-bottom.png">
-				</div>
-			</a>
+			<div class="container">	
+				<ul type="none">
+					<li><a href="#" class="header__btn header__btn_size">Главная<img src="img/header_border-bottom.png"></a></li>
+					<li><a href="#" class="header__btn header__btn_size">Информация</a></li>
+					<li><a href="#" class="header__btn header__btn_size">Новости</a></li>
+					<li><a href="#" class="header__btn header__btn_size">Прайс-лист</a></li>
+					<li><a href="#" class="header__btn header__btn_size">Магазин</a></li>
+					<li><a href="#" class="header__btn header__btn_size">Контакты</a></li>
+				</ul>
 
-			<a href="#">
-				<div class="header__btn header__btn_size">Информация</div>
-			</a>
+					<a href="#" class="header__btn header__btn_size header__btn_align">
+					<img src="img/icon-login.png" class="header__btn__icon-login header__btn__icon-login_size">Вход</a>
 
-			<a href="#">
-				<div class="header__btn header__btn_size">Новости</div>
-			</a>
-
-			<a href="#">
-				<div class="header__btn header__btn_size">Прайс-лист</div>
-			</a>
-
-			<a href="#">
-				<div class="header__btn header__btn_size">Магазин</div>
-			</a>
-
-			<a href="#">
-				<div class="header__btn header__btn_size">Контакты</div>
-			</a>
-
-			<a href="#">
-				<div class="header__btn header__btn_size header__btn_align">
-					<div class="header__btn__icon-login header__btn__icon-login_size"><img src="img/icon-login.png"></div>Вход</div>
-			</a>
+					<div class="clearfix"></div>
+			</div>
 		</header>
-
+	<div class="container">		
 		<div class="logo logo_size">
 			<img src="img/logo.png">
 		</div>
@@ -66,7 +52,7 @@
 		</div>
 
 		<div class="news-photo news-photo_size">
-			<div class="news news_size news_text">
+			<div class="news news-size news_text">
 				<h3>Новости</h3>
 				<br>
 				<p>Нам наконец завезли ягермайстер! теперь вы<br>
@@ -76,21 +62,117 @@
 				<p>В нашей команде пополнение, Борис "Бритва"<br>
 					стригунец, обладатель множества титулов и<br>
 				наград пополнил наши стройные ряды</p><br>
-				<p class="news_date">19 сентября</p>				
+				<p class="news_date">19 сентября</p>
+				<br>
 				<a href="#">
-					<div class="news-photo__btn news-photo__btn_size news-photo__btn_text">
-					
-					</div>
+					<div class="news-photo__btn news-photo__btn_size news-photo__btn_text">Все новости</div>
 				</a>
 			</div>
+
+			<div class="news-photo-line">
+			<img src="img/news-photo-line.png">
+			</div>
+
+			<div class="photo photo_size photo_text">
+				<h3>Фотогалерея</h3>
+				<br>
+				<div class="photo_img"><img src="img/photo-img.png"></div>
+
+				<a href="#">
+					<div class="news-photo__btn photo__btn_size news-photo__btn_text news-photo__btn_float">Назад</div>
+				</a>
+
+				<a href="#">
+					<div class="news-photo__btn photo__btn_size news-photo__btn_text news-photo__btn_float">Вперед</div>
+				</a>
+			</div>
+
+
 		</div>
 
 		<div class="contacts-sign-up contacts-sign-up_size">
-			
-		</div>
+			<div class="contacts contacts_size contacts_text">
+				<h3>Контактная информация</h3>
+				<br>
+				<ul type="none">
+					<li>Барбершоп "Бородинский"</li>
+					<li>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</li>
+					<li>Телефон: +7 (495) 666-02-66</li>
+				</ul>
+				<br>
+				<ul type="none">
+					<li>Время Работы:</li>
+					<li>ПН — ПТ: С 10:00 ДО 22:00</li>
+					<li>СБ — ВС: С 10:00 ДО 19:00</li>
+				</ul>
 
+				<a href="#">
+					<div class="contacts__btn contacts__btn_size contacts__btn_text contacts__btn_float">Как проехать</div>
+				</a>
+
+				<a href="#">
+					<div class="contacts__btn contacts__btn_size contacts__btn_text contacts__btn_float">Обратная связь</div>
+				</a>
+			</div>
+
+			<div class="news-photo-line">
+			<img src="img/news-photo-line.png">
+			</div>
+
+			<div class="sign-up sign-up_size sign-up_text">
+
+				<form>
+				<h3>Записаться</h3>
+				<br>
+				<p>Укажите желаемое время и дату и мы с Вами для подтверждения брони</p>
+
+				<input type="text" name="sign-up-date" placeholder="Дата" class="sign-in__input-field_size sign-in__input-field_text sign-in__input-field_border sign-in__input-field_float">
+
+				<input type="text" name="sign-up-time" placeholder="Время" class="sign-in__input-field_size sign-in__input-field_text sign-in__input-field_border sign-in__input-field_float">
+
+				<input type="text" name="sign-up-name" placeholder="Ваше имя" class="sign-in__input-field_size sign-in__input-field_text sign-in__input-field_border sign-in__input-field_float">
+
+				<input type="text" name="sign-up-name" placeholder="Телефон" class="sign-in__input-field_size sign-in__input-field_text sign-in__input-field_border sign-in__input-field_float">
+
+				<input type="submit" name="sign-up" value="Отправить" class="sign-in__btn-submit_size sign-in__btn-submit_text sign-in__btn-submit_border">
+				</form>
+			</div>
+		</div>
+	</div>
 		<footer class="footer footer_size">
-			
+			<div class="container">
+				<div class="footer__adress_size footer__adress_text footer_float">
+					<ul type="none">
+						<li>Барбершоп "Бородинский"</li>
+						<li>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</li>
+						<li><span class="footer__adress__text_underline">Как нас найти?</span></li>
+						<li>Телефон: +7(495)666-02-66</li>
+					</ul>
+				</div>
+
+				<div class="footer__vk-fb_size footer__vk-fb_text footer_float">
+					<h4>Давайте дружить!</h4>
+					<br>
+					<div class="footer__vk_size">
+						<img src="img/vk-img.png" class="footer__vk_img">
+					</div>
+
+					<div class="footer__f_size">
+						<img src="img/facebook-img.png" class="footer__f_img">
+					</div>
+
+					<div class="footer__camera_size">
+						<img src="img/camera-img.png" class="footer__camera_img">
+					</div>
+				</div>
+
+				<div class="footer__developer_size footer__developer_text footer_float">
+					<h4>Разработано:</h4>
+					<div class="footer__develer__html-academy_size footer__develer__html-academy_text">
+						<a href="#">htmlacademy.ru</a>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
 </body>
