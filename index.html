@@ -2,14 +2,14 @@
 <html>
 <head>
 	<title>Барбершоп «Бородинский»</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper">
 		<header class="header header_size header__btn_text">
 			<div class="container">	
 				<ul type="none">
-					<li><a class="header__btn header__btn_size" href="#"><span class="header__btn_border">Главная</span><!-- <img src="img/header_border-bottom.png"> --></a></li>
+					<li><a class="header__btn header__btn_size" href="#"><span class="header__btn_current-page">Главная</span><!-- <img src="img/header_border-bottom.png"> --></a></li>
 					<li><a class="header__btn header__btn_size" href="#">Информация</a></li>
 					<li><a class="header__btn header__btn_size" href="#">Новости</a></li>
 					<li><a class="header__btn header__btn_size" href="#">Прайс-лист</a></li>
@@ -91,14 +91,14 @@
 				<div class="contacts-sign-up contacts-sign-up_size">
 					<div class="contacts contacts_size contacts_text">
 						<h3>Контактная информация</h3>
-						<br>
-						<ul type="none">
+
+						<ul type="none" class="contacts_margin-top">
 							<li>Барбершоп "Бородинский"</li>
 							<li>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</li>
 							<li>Телефон: +7 (495) 666-02-66</li>
 						</ul>
-						<br>
-						<ul type="none">
+
+						<ul type="none" class="contacts_margin-top">
 							<li>Время Работы:</li>
 							<li>ПН — ПТ: С 10:00 ДО 22:00</li>
 							<li>СБ — ВС: С 10:00 ДО 19:00</li>
@@ -121,7 +121,6 @@
 
 						<form>
 							<h3>Записаться</h3>
-							<br>
 							<p>Укажите желаемое время и дату и мы с Вами для подтверждения брони</p>
 
 							<input class="sign-in__input-field_size sign-in__input-field_text sign-in__input-field_border sign-in__input-field_outline sign-in__input-field_float" type="text" name="sign-up-date" placeholder="Дата">
@@ -154,19 +153,19 @@
 					<br>
 					<ul type="none">
 						<li>
-							<div class="footer__vk_size">
-								<img class="footer__vk_img" src="img/vk-img.png">
-							</div>
+							<a class="footer__vk_size footer__vk_text" href="#">
+								<i class="icon-vkontakte"></i>
+							</a>
 						</li>
 						<li>
-							<div class="footer__f_size"><i class="icon-facebook">&#xf09a;</i>
-								<!-- <img class="footer__f_img" src="img/facebook-img.png"> -->
-							</div>
+							<a class="footer__f_size footer__f_text" href="#">
+								<i class="icon-facebook"></i>
+							</a>
 						</li>
 						<li>
-							<div class="footer__camera_size">
-								<img class="footer__camera_img" src="img/camera-img.png">
-							</div>
+							<a class="footer__instagram_size footer__instagram_text" href="#">
+								<i class="icon-instagram"></i>
+							</a>
 						</li>
 					</ul>
 				</div>

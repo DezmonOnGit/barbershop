@@ -1,3 +1,29 @@
+/*
+******************
+
+Содержание
+
+******************
+
+1. FONT.................1
+2. HEADER(MENU).........2
+3. LOGO.................3
+4. DESCRIPTION..........4
+5. NEWS-PHOTO...........5
+6. CONTACTS SIGN-UP.....6
+7. FOOTER...............7
+*/
+
+/*
+***********************
+
+FONT.................1
+
+		START
+
+***********************
+*/
+
 @font-face {
     font-family: "PT Sans Narrow Bold"; /* Гарнитура шрифта */
     src: url(../fonts/PTSans/PTN77F.ttf); /* Путь к файлу со шрифтом */
@@ -5,17 +31,17 @@
 
 @font-face {
     font-family: "PT Sans Narrow"; /* Гарнитура шрифта */
-    src: url(fonts/PTSans/PTN57F.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/PTSans/PTN57F.ttf); /* Путь к файлу со шрифтом */
    }
 
 @font-face {
   font-family: 'fontello';
-  src: url('fonts/fontello.eot?81236304');
-  src: url('fonts/fontello.eot?81236304#iefix') format('embedded-opentype'),
-       url('fonts/fontello.woff2?81236304') format('woff2'),
-       url('fonts/fontello.woff?81236304') format('woff'),
-       url('fonts/fontello.ttf?81236304') format('truetype'),
-       url('fonts/fontello.svg?81236304#fontello') format('svg');
+  src: url('../fonts/fontello.eot?81236304');
+  src: url('../fonts/fontello.eot?81236304#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff2?81236304') format('woff2'),
+       url('../fonts/fontello.woff?81236304') format('woff'),
+       url('../fonts/fontello.ttf?81236304') format('truetype'),
+       url('../fonts/fontello.svg?81236304#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -60,6 +86,15 @@
 .icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-vkontakte:before { content: '\f189'; } /* '' */
 
+/*
+***********************
+
+FONT.................1
+
+		END
+
+***********************
+*/
 
 * {
 	margin: 0;
@@ -76,7 +111,7 @@ h3 {
 }
 
 .wrapper {
-	background: url(img/background.png);
+	background: url(../img/background.png);
 }
 
 .container {
@@ -84,14 +119,24 @@ h3 {
 	margin: 0 auto;
 }
 
-.header {
-	background: black;
-	clear: both;
-}
-
 .clearfix {
 	width: 100%;
 	display: block;
+	clear: both;
+}
+
+/*
+***********************
+
+HEADER(MENU).........2
+
+		START
+
+***********************
+*/
+
+.header {
+	background: black;
 	clear: both;
 }
 
@@ -153,11 +198,55 @@ h3 {
 	margin: 0 20px 0 120px;
 }
 
+/*
+***********************
+
+HEADER(MENU).........2
+
+		END
+
+***********************
+*/
+
+
+/*
+***********************
+
+LOGO.................3
+
+		START
+
+***********************
+*/
+
+
 
 .logo_size {
 	width: 367px;
 	margin: 60px auto 41px;
 }
+
+
+/*
+***********************
+
+LOGO.................3
+
+		END
+
+***********************
+*/
+
+
+/*
+***********************
+
+DESCRIPTION..........4
+
+		START
+
+***********************
+*/
 
 
 .description p {
@@ -199,6 +288,28 @@ h3 {
 	transform: rotate(45deg);
 	margin: 23px auto 32px;
 }
+
+
+/*
+***********************
+
+DESCRIPTION..........4
+
+		END
+
+***********************
+*/
+
+
+/*
+***********************
+
+NEWS-PHOTO...........5
+
+		START
+
+***********************
+*/
 
 .news-photo {
 	background: #fdfaf7;
@@ -265,6 +376,7 @@ h3 {
 	width: 140px;
 	height: calc(44px - 15px);
 	padding: 15px 0 0 0;
+	margin-top: 66px;
 }
 
 .news-photo__btn_text {
@@ -290,7 +402,6 @@ h3 {
 
 .photo_size {
 	width: calc(355px - 40px);
-/*	height: 322px;*/
 	margin: 0 0 0 55px;
 }
 
@@ -318,6 +429,26 @@ h3 {
 }
 
 
+/*
+***********************
+
+NEWS-PHOTO...........5
+
+		END
+
+***********************
+*/
+
+/*
+***********************
+
+CONTACTS SIGN-UP.....6
+
+		START
+
+***********************
+*/
+
 .contacts-sign-up {
 	background: #fdfaf7;
 	clear: both;
@@ -334,9 +465,13 @@ h3 {
 }
 
 .contacts_size {
-	width: calc(380px - 40px);
+	width: calc(380px - 55px);
 	height: 322px;
 	margin: 0 55px 0 0;
+}
+
+.contacts_margin-top {
+	margin-top: 20px;
 }
 
 .contacts_text {
@@ -354,10 +489,6 @@ h3 {
 	line-height: 40px;
 }
 
-.footer {
-	clear: both;
-}
-
 .contacts__btn {
 	background: black;
 }
@@ -366,7 +497,7 @@ h3 {
 	width: 140px;
 	height: calc(44px - 15px);
 	padding: 15px 0 0 0;
-	margin: 40px 0 0;
+	margin: 49px 0 0;
 }
 
 .contacts__btn_margin-right {
@@ -439,7 +570,7 @@ h3 {
 	width: 300px;
 	height: 44px;
 	background: black;
-	margin: 42px 0 0;
+	margin: 46px 0 0;
 }
 
 .sign-in__btn-submit_text {
@@ -455,6 +586,28 @@ h3 {
 	border: 1px solid black;
 }
 
+/*
+***********************
+
+CONTACTS SIGN-UP.....6
+
+		END
+
+***********************
+*/
+
+/*
+***********************
+
+FOOTER...............7
+
+		START
+
+***********************
+*/
+
+
+
 .footer_size {
 	width: 100%;
 	margin: 33px auto 0;
@@ -464,7 +617,6 @@ h3 {
 .footer__adress_size {
 	margin: 62px 45px 0 10px; 
 }
-
 
 .footer__adress_text {
 	color: white;
@@ -569,3 +721,14 @@ h3 {
 .footer__develer__html-academy_text {
 	line-height: 40px;
 }
+
+
+/*
+***********************
+
+FOOTER...............7
+
+		END
+
+***********************
+*/
