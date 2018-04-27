@@ -1,18 +1,45 @@
 /*
-******************
+*******************************
 
 Содержание
 
-******************
-
-1. FONT.................1
-2. HEADER(MENU).........2
-3. LOGO.................3
-4. DESCRIPTION..........4
-5. NEWS-PHOTO...........5
-6. CONTACTS SIGN-UP.....6
-7. FOOTER...............7
+*******************************
+1. INDEX......................1
+	1.1. FONT.................1
+	1.2. HEADER(MENU).........2
+	1.3. LOGO.................3
+	1.4. DESCRIPTION..........4
+	1.5. NEWS-PHOTO...........5
+	1.6. CONTACTS SIGN-UP.....6
+	1.7. FOOTER...............7
+8. BARBERSHOP-ITEM............8 
+	8.1 TITLE.................8
+	8.2 BREAD-CRUMBS..........9
+	8.3 PRODUCT..............10
+9. BARBERSHOP-PRICE..........11
+	9.1 HAIRCUT..............11
+	9.2 MEANS................12
+	9.3 TABLE................13
+	9.4 ABOUT-US.............14
+10.BARBERSHOP-SHOP...........15
+	10.1 MANUFACTURERS-
+	GROUP-OF-PRODUCT.........16
+	10.2 MANUFACTURERS.......17
+	10.3 GROUP-OF-PRODUCT....18
+	10.4 GOODS...............19
 */
+
+
+/*
+***********************
+
+INDEX................1
+
+		START
+
+***********************
+*/
+
 
 /*
 ***********************
@@ -155,7 +182,7 @@ HEADER(MENU).........2
 	width: 100px;
 	height: calc(70px - 25px);
 	padding: 25px 0 0;
-	margin: 0 10px;
+	margin-right: 12px;
 }
 
 .header__btn_text{
@@ -163,7 +190,7 @@ HEADER(MENU).........2
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 16px;
-	font-family: "PT Sans Narrow Bold";
+	font-family: "PT Sans Narrow Bold", sans-serif;
 }
 
 .header__btn_current-page {
@@ -178,7 +205,7 @@ HEADER(MENU).........2
     display: inline-block;
     height: 5px;
     background-color: white;
-    bottom: -8px;
+    bottom: -14px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -195,7 +222,8 @@ HEADER(MENU).........2
 }
 
 .header__btn_align {
-	margin: 0 20px 0 120px;
+	margin-left: 174px;
+	margin-right: 0;
 }
 
 /*
@@ -250,23 +278,24 @@ DESCRIPTION..........4
 
 
 .description p {
-	font-size: 13px;
+	font-size: 14px;
+	line-height: 22px;
 }
 
 .description h3 {
-	font-size: 27px;
+	font-size: 30px;
 }
 
 .description_size {
 	width: calc(960px - 20px);
-	margin: 82px auto 43px;
+	margin: 64px auto 80px;
 }
 
 .description_text {
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
-	font-family: "PT Sans Narrow Bold";
+	font-family: "PT Sans Narrow Bold", sans-serif;
 }
 
 .description__clause {
@@ -286,7 +315,7 @@ DESCRIPTION..........4
 	height: 22px;
 	background: white;
 	transform: rotate(45deg);
-	margin: 23px auto 32px;
+	margin: 23px auto 34px;
 }
 
 
@@ -339,7 +368,7 @@ NEWS-PHOTO...........5
 	text-transform: uppercase;
 	line-height: 24px;
 	font-size: 14px;
-	font-family: "PT Sans Narrow Bold";
+	font-family: "PT Sans Narrow Bold", sans-serif;
 }
 
 .news_float {
@@ -376,7 +405,6 @@ NEWS-PHOTO...........5
 	width: 140px;
 	height: calc(44px - 15px);
 	padding: 15px 0 0 0;
-	margin-top: 66px;
 }
 
 .news-photo__btn_text {
@@ -385,7 +413,7 @@ NEWS-PHOTO...........5
 	text-align: center;
 	line-height: 14px;
 	font-size: 14px;
-	font-family: "PT Sans Narrow Bold";
+	font-family: "PT Sans Narrow Bold", sans-serif;
 }
 
 .news-photo__btn_float {
@@ -401,33 +429,44 @@ NEWS-PHOTO...........5
 }
 
 .photo_size {
-	width: calc(355px - 40px);
-	margin: 0 0 0 55px;
+	width: 337px;
+	margin-left: 55px;
 }
 
 .photo_text {
 	text-transform: uppercase;
 	font-size: 16px;
-	font-family: "PT Sans Narrow Bold";
+	font-family: "PT Sans Narrow Bold", sans-serif;
 }
 
 .photo h3 {
-	font-size: 27px;
+	display: block;
+	font-size: 30px;
+	margin-left: 34px;
 }
 
 .photo_img {
 	width: 286px;
 	height: 164px;
 	border: 7px solid #fff;
+	margin-left: 31px;
+	margin-top: 12px;
 }
 
 .photo__btn_size {
 	width: 140px;
 	height: calc(44px - 15px);
 	padding: 15px 0 0 0;
-	margin: 85px 8px 0;
+	margin-top: 36px;
 }
 
+.photo__btn_size_back {
+	margin-left: 33px;
+}
+
+.photo__btn_size_next {
+	margin-left: 19px;
+}
 
 /*
 ***********************
@@ -478,7 +517,7 @@ CONTACTS SIGN-UP.....6
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 24px;
-	font-family: "PT Sans Narrow Bold";
+	font-family: "PT Sans Narrow Bold", sans-serif;
 }
 
 .contacts h3 {
@@ -514,7 +553,7 @@ CONTACTS SIGN-UP.....6
 	text-align: center;
 	line-height: 14px;
 	font-size: 14px;
-	font-family: "PT Sans Narrow Bold";
+	font-family: "PT Sans Narrow Bold", sans-serif;
 }
 
 .contacts__btn_float {
@@ -528,17 +567,19 @@ CONTACTS SIGN-UP.....6
 .sign-up_size {
 	width: calc(355px - 40px);
 	height: 322px;
-	margin: 0 0 0 55px;
+	margin: 4px 0 0 77px;
 }
 
 .sign-up_text {
 	text-transform: uppercase;
-	font-size: 16px;
-	font-family: "PT Sans Narrow Bold";
+	line-height: 27px;
+	font-size: 14px;
+	font-family: "PT Sans Narrow Bold", sans-serif;
 }
 
 .sign-up h3 {
-	font-size: 27px;	
+	font-size: 30px;
+	margin-bottom: 31px;	
 }
 
 .sign-in__input-field_size {
@@ -551,7 +592,7 @@ CONTACTS SIGN-UP.....6
 .sign-in__input-field_text { 
 	text-transform: uppercase;
 	font-size: 16px;
-	font-family: "PT Sans Narrow Bold";
+	font-family: "PT Sans Narrow Bold", sans-serif;
 }
 
 .sign-in__input-field_border {
@@ -570,7 +611,7 @@ CONTACTS SIGN-UP.....6
 	width: 300px;
 	height: 44px;
 	background: black;
-	margin: 46px 0 0;
+	margin: 24px 0 0 8px;
 }
 
 .sign-in__btn-submit_text {
@@ -579,7 +620,7 @@ CONTACTS SIGN-UP.....6
 	text-align: center;
 	line-height: 14px;
 	font-size: 14px;
-	font-family: "PT Sans Narrow Bold";
+	font-family: "PT Sans Narrow Bold", sans-serif;
 }
 
 .sign-in__btn-submit_border {
@@ -624,7 +665,7 @@ FOOTER...............7
 	text-align: left;
 	line-height: 25px;
 	font-size: 14px;
-	font-family: "PT Sans Narrow Bold";
+	font-family: "PT Sans Narrow Bold", sans-serif;
 }
 
 .footer__adress__text_underline {
@@ -641,7 +682,7 @@ FOOTER...............7
 	text-align: center;
 	line-height: 14px;
 	font-size: 14px;
-	font-family: "PT Sans Narrow Bold";
+	font-family: "PT Sans Narrow Bold", sans-serif;
 }
 
 .footer__vk-fb_size {
@@ -658,8 +699,13 @@ FOOTER...............7
 	float: left;
 }
 
+.footer__vk_size:hover {
+	background: white;
+	color: black;
+}
+
 .footer__vk_text {
-	font-family: "fontello";
+	font-family: "fontello", sans-serif;
 	color: white;
 	font-size: 25px;
 	text-align: center;
@@ -673,8 +719,14 @@ FOOTER...............7
 	background: black;
 	float: left;
 }
+
+.footer__f_size:hover {
+	background: white;
+	color: black;
+}
+
 .footer__f_text {
-	font-family: "fontello";
+	font-family: "fontello", sans-serif;
 	color: white;
 	font-size: 25px;
 	text-align: center;
@@ -689,8 +741,13 @@ FOOTER...............7
 	float: left;
 }
 
+.footer__instagram_size:hover {
+	background: white;
+	color: black;
+}
+
 .footer__instagram_text {
-	font-family: "fontello";
+	font-family: "fontello", sans-serif;
 	color: white;
 	font-size: 25px;
 	text-align: center;
@@ -708,7 +765,7 @@ FOOTER...............7
 	text-align: center;
 	line-height: 14px;
 	font-size: 14px;
-	font-family: "PT Sans Narrow Bold";
+	font-family: "PT Sans Narrow Bold", sans-serif;
 }
 
 .footer__develer__html-academy_size {
@@ -716,6 +773,11 @@ FOOTER...............7
 	height: 43px;
 	margin: 20px 0 0;
 	background: black;	
+}
+
+.footer__develer__html-academy_size:hover {
+	background: white;
+	color: black;	
 }
 
 .footer__develer__html-academy_text {
@@ -727,6 +789,905 @@ FOOTER...............7
 ***********************
 
 FOOTER...............7
+
+		END
+
+***********************
+*/
+
+/*
+***********************
+
+INDEX................1
+
+		END
+
+***********************
+*/
+
+/*
+***********************
+
+BARBERSHOP-ITEM......8 
+
+		START
+
+***********************
+*/
+
+.barbershop-background-white {
+	background: url(../img/background-white.png) repeat;
+}
+
+/*
+***********************
+
+TITLE.................8
+
+		START
+
+***********************
+*/
+
+
+.title_text {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: "PT Sans Narrow Bold", sans-serif;
+}
+
+.title_size {
+	width: calc(100% - 20px);
+	margin: 55px 0 22px 3px;
+}
+
+
+/*
+***********************
+
+TITLE.................8
+
+		END
+
+***********************
+*/
+
+/*
+***********************
+
+BREAD-CRUMBS..........9
+
+		START
+
+***********************
+*/
+
+.bread-crumbs {
+	list-style-type: none;
+}
+
+.bread-crumbs li {
+	float: left;
+}
+
+.bread-crumbs li:after {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	transform: rotate(45deg);
+	background: black;
+	margin: 0 18px 3px;
+}
+
+.bread-crumbs li:nth-child(4):after {
+	display: none;
+}
+
+.bread-crumbs_text {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "PT Sans Narrow Bold", sans-serif;	
+}
+
+.bread-crumbs_text_grey {
+	color: #b5b3b1;
+}
+
+.bread-crumbs_size {
+	margin-bottom: 10px;
+}
+
+
+/*
+***********************
+
+BREAD-CRUMBS..........9
+
+		END
+
+***********************
+*/
+
+
+/*
+***********************
+
+PRODUCT..............10
+
+		START
+
+***********************
+*/
+
+
+.product-img {
+	float: left;
+}
+
+.product-img_float {
+	float: left;
+}
+
+.product-img_size {
+	margin-top: 48px;
+	margin-right: 90px;
+}
+
+.product-img-main_size {
+	margin-bottom: 15px;
+}
+
+.product-img_shadow {
+	box-shadow: 0 0 20px #e2dfdc
+}
+
+.product-img-secondary_size {
+	margin:0 10px;
+}
+
+.product-information {
+	float: left;
+}
+
+.product-information_size {
+	width: 390px;
+	margin-top: 70px;	
+}
+
+.product-information_text {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "PT Sans Narrow Bold", sans-serif;	
+}
+
+.product-information_text h3 {
+	display: block;
+	font-size: 24px;
+	margin-top: 63px;
+	margin-bottom: 27px;
+}
+
+.product-information__article_text {
+	display: inline-block;
+	color: #aeaeae;
+	margin-left: 177px;
+}
+
+.product-information__description_size {
+	margin-top: 36px;
+}
+
+.product-information__description_text{
+	line-height: 23px;
+}
+
+.product-information__cost-buy {
+	list-style-type: none;
+}
+
+
+.product-information__cost-buy li:first-child {
+	display: inline-block;
+	width: 110px;
+	height: 30px;
+	padding-left: 3px;
+	padding-top: 12px;
+	margin-top: 40px;
+	text-align: center;
+	background: #e5e5e5;
+	float: left;
+}
+
+.product-information__cost-buy li:last-child {
+	display: inline-block;
+	width: 74px;
+	height: 30px;
+	padding-left: 2px;
+	padding-top: 12px;
+	margin-top: 40px;
+	color: white;
+	text-align: center;
+	background: black;
+	float: left;
+}
+
+.product-information__kit {
+	list-style-type: none;	
+}
+
+.product-information__kit li {
+	line-height: 25px;
+	margin-left: 4px;
+}
+.product-information__kit li:before {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	transform: rotate(45deg);
+	background: black;
+	margin-right: 11px;
+}
+
+/*
+***********************
+
+PRODUCT..............10
+
+		END
+
+***********************
+*/
+
+/*
+***********************
+
+BARBERSHOP-ITEM......8 
+
+		END
+
+***********************
+*/
+
+/*
+***********************
+
+BARBERSHOP-PRICE....11
+
+		START
+
+***********************
+*/
+
+.bread-crumbs_display-none li:nth-child(2):after {
+	display: none;
+}
+
+
+/*
+***********************
+
+HAIRCUT..............11
+
+		START
+
+***********************
+*/
+
+.haircut_size {
+/*	padding-right: 38px;*/
+	margin-top: 48px;
+	margin-bottom: 10px;
+}
+
+.haircut_text h3 {
+	font-size: 48px;
+/*	text-align: center;*/
+	text-transform: uppercase;
+	font-family: "PT Sans Narrow Bold", sans-serif;	
+}
+
+.haircut_text h3:before {
+	display: inline-block;
+	content: "";
+	width: 160px;
+	margin-right: 25px;
+	border-bottom: 2px solid black;
+	vertical-align: middle;
+}
+
+.haircut_text h3:after {
+	display: inline-block;
+	content: "";
+	width: 160px;
+	margin-left: 33px;
+	border-bottom: 2px solid black;
+	vertical-align: middle;
+}
+
+/*
+***********************
+
+HAIRCUT..............11
+
+		END
+
+***********************
+*/
+
+
+/*
+***********************
+
+MEANS................12
+
+		START
+
+***********************
+*/
+
+.means {
+	float: left;
+}
+.means_size {
+	width: 236px;
+	margin-top: 50px;
+	margin-right: 244px;
+}
+
+.means_text {
+	font-size: 14px;
+	line-height: 38px;
+	text-transform: uppercase;
+	font-family: "PT Sans Narrow Bold", sans-serif;	
+}
+
+.means_text h4{
+	font-size: 24px;
+	line-height: 29px;
+	text-transform: uppercase;
+	font-family: "PT Sans Narrow Bold", sans-serif;	
+}
+.means ul {
+	list-style-type: none;
+}
+.means ul {
+	margin-top: 18px;
+}
+.means li:before {
+	content: "";
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	transform: rotate(45deg);
+	margin-right: 18px;
+	background: black;
+}
+
+
+/*
+***********************
+
+MEANS................12
+
+		END
+
+***********************
+*/
+
+/*
+***********************
+
+TABLE................13
+
+		START
+
+***********************
+*/
+
+.table-price {
+	float: left;
+}
+.table-price_size {
+	margin-top: 50px;
+}
+.table-price table {
+	margin-top: 37px;
+	border-collapse: collapse;
+}
+
+.table-price td {
+	border: 1px solid black;
+	width: 221px;
+	height: 40px;
+}
+
+.table-price td:nth-child(odd) {
+	padding-left: 19px;
+}
+
+.table-price td:nth-child(even) {
+	text-align: center;
+}
+
+.table-price_text {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: "PT Sans Narrow Bold", sans-serif;	
+}
+
+.table-price_text h4{
+	width: 175px;
+	font-size: 24px;
+/*	line-height: 29px;*/
+	text-transform: uppercase;
+	font-family: "PT Sans Narrow Bold", sans-serif;	
+}
+
+/*
+***********************
+
+TABLE................13
+
+		END
+
+***********************
+*/
+
+/*
+***********************
+
+ABOUT-US.............14
+
+		START
+
+***********************
+*/
+
+.about-us_size {
+	margin-top: 50px;
+}
+
+.about-us_text {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: "PT Sans Narrow Bold", sans-serif;	
+}
+
+.about-us h4 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: "PT Sans Narrow Bold", sans-serif;	
+}
+
+/*.about-us p:nth-child(2) {
+	width: 385px;
+	margin-top: 33px;
+	margin-right: 97px;
+	line-height: 23px;
+	float: left;
+	background: red;
+}
+.about-us p:nth-child(3) {
+	width: 368px;
+	margin-top: 30px;
+	line-height: 24px;
+	float: left;
+	background: green;
+}
+*/
+.about-us__left-paragraph {
+	width: 385px;
+	margin-top: 33px;
+	margin-right: 97px;
+	line-height: 23px;
+	float: left;
+}
+
+.about-us__rigth-paragraph {
+	width: 368px;
+	margin-top: 30px;
+	line-height: 24px;
+	float: left;
+}
+
+/*
+***********************
+
+ABOUT-US.............14
+
+		END
+
+***********************
+*/
+
+/*
+***********************
+
+BARBERSHOP-PRICE.....9
+
+		END
+
+***********************
+*/
+
+/*
+***********************
+
+BARBERSHOP-SHOP....10
+
+		START
+
+***********************
+*/
+
+.bread-crumbs_display-none-shop li:nth-child(3):after {
+	display: none;
+}
+
+/*
+***********************
+
+MANUFACTURERS-GROUP-OF-PRODUCT....15
+
+		START
+
+***********************
+*/
+
+
+.manufacturers-group-of-product {
+	float: left;
+}
+
+.manufacturers-group-of-product_text {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: "PT Sans Narrow Bold", sans-serif;	
+}
+
+.manufacturers-group-of-product_size {
+	width: 200px;
+	margin-top: 45px;
+	margin-right: 40px;
+}
+
+.manufacturers-group-of-product h3 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: "PT Sans Narrow Bold", sans-serif;		
+}
+
+.manufacturers-group-of-product label:hover {
+	color: #663d15;
+}
+
+
+/*
+***********************
+
+MANUFACTURERS-GROUP-OF-PRODUCT....15
+
+		END
+
+***********************
+*/
+
+
+/*
+***********************
+
+MANUFACTURERS........16
+
+		START
+
+***********************
+*/
+
+
+.manufacturers ul {
+	list-style-type: none;
+	margin-top: 20px;
+	line-height: 37px;
+}
+
+.manufacturers input {
+	display: none;
+}
+
+.manufacturers input[type="checkbox"] + label:before {
+	content: "";
+	display: inline-block;
+ 	width: 20px; 
+	height: 20px;
+	margin-right: 26px;
+	background: url(../img/checkbox-1.jpg) no-repeat;
+ 	cursor: pointer; 
+ 	vertical-align: middle;
+}
+
+.manufacturers input[type="checkbox"]:checked + label:before {
+ background-position: 0 -20px;
+}
+
+
+/*
+***********************
+
+MANUFACTURERS........16
+
+		END
+
+***********************
+*/
+
+
+/*
+***********************
+
+GROUP-OF-PRODUCT.....17
+
+		START
+
+***********************
+*/
+
+.group-of-product {
+	margin-top: 42px;
+}
+.group-of-product ul {
+	list-style-type: none;
+	margin-top: 30px;
+	line-height: 42px;	
+}
+
+.group-of-product input {
+	display: none;
+}
+
+.group-of-product input[type="radio"] + label:before {
+	content: "";
+	display: inline-block;
+ 	width: 20px; 
+	height: 20px;
+	margin-right: 26px;
+	background: url(../img/radio-1.jpg) no-repeat;
+ 	cursor: pointer; 
+ 	vertical-align: middle;
+}
+
+.group-of-product input[type="radio"]:checked + label:before {
+ background-position: 0 -20px;
+}
+
+.group-of-product li:nth-child(1) label {
+	display: block;
+	line-height: 19px;
+}
+
+.group-of-product li:nth-child(1) label:before {
+	float: left;
+}
+
+.btn-submit {
+	display: block;
+	width: 114px;
+	height: 43px;
+	margin-top: 44px;
+	text-align: center;
+	color: white;
+	background: black;
+	border: none;
+	font-size: 12.76px;
+	text-transform: uppercase;
+	font-family: "PT Sans Narrow Bold", sans-serif;
+}
+
+/*
+***********************
+
+GROUP-OF-PRODUCT.....17
+
+		END
+
+***********************
+*/
+
+/*
+***********************
+
+GOODS................19
+
+		START
+
+***********************
+*/
+
+.goods {
+	float: left;
+}
+
+.goods_size {
+	width: 720px;
+	margin-top: 45px;
+}
+
+.goods_text {
+	font-size: 14px;
+	font-family: "PT Sans Narrow Bold", sans-serif;		
+}
+
+.goods__block h4{
+	font-size: 14px;
+	font-family: "PT Sans Narrow Bold", sans-serif;
+	margin-left: 13px;
+	margin-top: 10px;
+}
+
+.goods__block h5 {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "PT Sans Narrow Bold", sans-serif;
+	margin-left: 14px;	
+}
+
+.goods__block {
+	float: left;
+	box-shadow: 0 0 25px #e9e6e4;
+}
+
+.goods__block_marg-top {
+	margin-top: 12px;
+}
+
+.goods__block_size {
+	width: 220px;
+	padding: 10px 5px 15px;
+	margin-right: 10px;
+}
+
+.goods-for-travels__img {
+	content: "";
+	display: block;
+	width: 220px;
+	height: 165px;
+	background: url(../img/goods-for-travels.png) no-repeat;
+}
+
+.goods__block ul {
+	list-style-type: none;
+}
+
+.goods__block li {
+	float: left;
+}
+
+.goods__block li:nth-child(odd) {
+	display: inline-block;
+	background: #e5e5e5;
+	color: black;
+	width: 108px;
+	height: 30px;
+	text-align: center;
+	padding-top: 13px;
+	margin-top: 15px;
+	margin-left: 14px;
+}
+
+.goods__block li:nth-child(even) {
+	display: inline-block;
+	background: black;
+	color: white;
+	width: 78px;
+	height: 30px;
+	text-align: center;
+	padding-top: 13px;
+	margin-top: 15px;
+}
+
+.goods__block li:nth-child(even):hover {
+/*	display: inline-block;*/
+	background: #663d15;
+/*	color: white;
+	width: 78px;
+	height: 30px;
+	text-align: center;
+	padding-top: 13px;
+	margin-top: 15px;*/
+}
+
+.moisturizing-conditioner__img {
+	content: "";
+	display: block;
+	width: 220px;
+	height: 165px;
+	background: url(../img/moisturizing-conditioner.png) no-repeat;
+}
+
+.hair-gel__img {
+	content: "";
+	display: block;
+	width: 220px;
+	height: 165px;
+	background: url(../img/hair-gel.png) no-repeat;
+}
+
+.clay-for-hair__img {
+	content: "";
+	display: block;
+	width: 220px;
+	height: 165px;
+	background: url(../img/clay-for-hair.png) no-repeat;	
+}
+
+.hair-gel-2__img {
+	content: "";
+	display: block;
+	width: 220px;
+	height: 165px;
+	background: url(../img/hair-gel-2.png) no-repeat;	
+}
+
+.shaving-kit__img {
+	content: "";
+	display: block;
+	width: 220px;
+	height: 165px;
+	background: url(../img/shaving-kit.png) no-repeat;	
+}
+
+.btn-page-for-goods_text {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "PT Sans Narrow Bold", sans-serif;
+
+}
+
+.btn-page-for-goods_size {
+	margin-top: 48px;
+	margin-left: 242px;
+}
+
+.btn-page-for-goods li {
+	display: inline-block;
+	width: 42px;
+	height: 31px;
+	padding-top: 14px;
+	margin-right: 5px;
+	background: black;
+	color: white;
+	text-align: center;
+}
+
+.btn-page-for-goods li:hover {
+	background: #663d15;
+}
+
+.btn-page-for-goods__current-page li {
+	display: inline-block;
+	background: white;
+	color: black;
+}
+
+.btn-page-for-goods__current-page li:hover {
+	background: white;
+}
+
+/*
+***********************
+
+GOODS................19
+
+		END
+
+***********************
+*/
+
+/*
+***********************
+
+BARBERSHOP-SHOP....15
 
 		END
 
