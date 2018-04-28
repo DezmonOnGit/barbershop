@@ -137,6 +137,10 @@ h3 {
 	font-size: 20px;
 }
 
+ul {
+	list-style-type: none;
+}
+
 .wrapper {
 	background: url(../img/background.png);
 }
