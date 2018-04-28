@@ -174,8 +174,28 @@ HEADER(MENU).........2
 	float: left;
 }
 
+.header__btn__icon-login:before {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 16px;
+	margin-right: 5px;
+	vertical-align: middle;
+	background: url(../img/icon-login.png);
+}
+
 .header__btn:hover {
 	background: #242424;
+}
+
+.header__btn__icon-login:hover:before {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 16px;
+	margin-right: 5px;
+	vertical-align: middle;
+	background: url(../img/icon-login-hover.png);
 }
 
 .header__btn_size{
@@ -205,7 +225,7 @@ HEADER(MENU).........2
     display: inline-block;
     height: 5px;
     background-color: white;
-    bottom: -14px;
+    bottom: -12px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -651,12 +671,12 @@ FOOTER...............7
 
 .footer_size {
 	width: 100%;
-	margin: 33px auto 0;
+	margin: 46px auto 0;
 	background: #242424;
 }
 
 .footer__adress_size {
-	margin: 62px 45px 0 10px; 
+	margin: 55px 45px 40px 3px; 
 }
 
 .footer__adress_text {
@@ -687,7 +707,7 @@ FOOTER...............7
 
 .footer__vk-fb_size {
 	width: 143px;
-	margin: 62px 130px 0 45px; 
+	margin: 62px 130px 0 70px; 
 }
 
 .footer__vk_size {
@@ -755,7 +775,7 @@ FOOTER...............7
 
 .footer__developer_size {
 	width: 140px;
-	margin: 62px 0 0 130px; 
+	margin: 62px 0 0 128px; 
 	float: left;
 }
 
@@ -1198,7 +1218,7 @@ TABLE................13
 }
 
 .table-price td {
-	border: 1px solid black;
+	border: 2px solid black;
 	width: 221px;
 	height: 40px;
 }
@@ -1281,6 +1301,7 @@ ABOUT-US.............14
 	width: 385px;
 	margin-top: 33px;
 	margin-right: 97px;
+	margin-bottom: 85px;
 	line-height: 23px;
 	float: left;
 }
@@ -1288,6 +1309,7 @@ ABOUT-US.............14
 .about-us__rigth-paragraph {
 	width: 368px;
 	margin-top: 30px;
+	margin-bottom: 85px;
 	line-height: 24px;
 	float: left;
 }
@@ -1363,6 +1385,24 @@ MANUFACTURERS-GROUP-OF-PRODUCT....15
 	color: #663d15;
 }
 
+.btn-submit {
+	display: block;
+	width: 114px;
+	height: 43px;
+	margin-top: 44px;
+	text-align: center;
+	color: white;
+	background: black;
+	border: none;
+	font-size: 12.76px;
+	text-transform: uppercase;
+	font-family: "PT Sans Narrow Bold", sans-serif;
+}
+
+.btn-submit:hover {
+	background: #663d15;
+	cursor: pointer;
+}
 
 /*
 ***********************
@@ -1411,6 +1451,9 @@ MANUFACTURERS........16
  background-position: 0 -20px;
 }
 
+.manufacturers label:hover {
+ 	cursor: pointer; 	
+}
 
 /*
 ***********************
@@ -1470,19 +1513,10 @@ GROUP-OF-PRODUCT.....17
 	float: left;
 }
 
-.btn-submit {
-	display: block;
-	width: 114px;
-	height: 43px;
-	margin-top: 44px;
-	text-align: center;
-	color: white;
-	background: black;
-	border: none;
-	font-size: 12.76px;
-	text-transform: uppercase;
-	font-family: "PT Sans Narrow Bold", sans-serif;
+.group-of-product label:hover {
+ 	cursor: pointer; 	
 }
+
 
 /*
 ***********************
@@ -1518,33 +1552,38 @@ GOODS................19
 	font-family: "PT Sans Narrow Bold", sans-serif;		
 }
 
-.goods__block h4{
+.goods__block__name{
+	display: block;
 	font-size: 14px;
 	font-family: "PT Sans Narrow Bold", sans-serif;
-	margin-left: 13px;
-	margin-top: 10px;
+	margin-left: 18px;
+	margin-top: 19px;
 }
 
-.goods__block h5 {
+.goods__block__manufacturer{
+	display: block;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-family: "PT Sans Narrow Bold", sans-serif;
-	margin-left: 14px;	
+	margin-top: 2px;
+	margin-left: 19px;	
 }
 
 .goods__block {
 	float: left;
+	background: white;
 	box-shadow: 0 0 25px #e9e6e4;
 }
 
-.goods__block_marg-top {
+/*.goods__block_marg-top {
 	margin-top: 12px;
-}
+}*/
 
 .goods__block_size {
 	width: 220px;
-	padding: 10px 5px 15px;
+	padding-bottom:15px;
 	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 .goods-for-travels__img {
@@ -1570,15 +1609,16 @@ GOODS................19
 	width: 108px;
 	height: 30px;
 	text-align: center;
-	padding-top: 13px;
+	padding-top: 12px;
 	margin-top: 15px;
-	margin-left: 14px;
+	margin-left: 19px;
 }
 
 .goods__block li:nth-child(even) {
 	display: inline-block;
 	background: black;
 	color: white;
+	text-transform: uppercase;
 	width: 78px;
 	height: 30px;
 	text-align: center;
@@ -1587,15 +1627,13 @@ GOODS................19
 }
 
 .goods__block li:nth-child(even):hover {
-/*	display: inline-block;*/
 	background: #663d15;
-/*	color: white;
-	width: 78px;
-	height: 30px;
-	text-align: center;
-	padding-top: 13px;
-	margin-top: 15px;*/
 }
+
+.goods__block__description-hover:hover {
+	color: #663d15;
+}
+
 
 .moisturizing-conditioner__img {
 	content: "";
