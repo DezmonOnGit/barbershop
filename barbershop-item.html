@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no"> <!-- Отключение выделения номеров телефона плагином skype в Microsoft edge -->
 	<title>Барбершоп «Бородинский»</title>
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper barbershop-background-white">
@@ -39,33 +41,33 @@
 
 			<!-- Bread crumbs begin -->
 
-			<ul class="bread-crumbs bread-crumbs_text bread-crumbs_size">
+			<ul class="breadcrumbs breadcrumbs_text breadcrumbs_size">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Магазин</a></li>
 				<li><a href="#">Средства для ухода</a></li>
-				<li><span class="bread-crumbs_text_grey">Набор для путешествий «Baxter of California»</span></li>
+				<li><span class="breadcrumbs_text_grey">Набор для путешествий «Baxter of California»</span></li>
 			</ul>
-			<div class="clearfix"></div>
 			<!-- Bread crumbs end -->
 
 			<!-- Product img begin -->
 
 			<div class="product-img product-img_size">
 				<div class="product-img-main_size product-img_shadow">
-					<img src="img/baxter-of-california-img-1.png" alt="baxter-of-california-img-1">
+					<img src="img/baxter-of-california-img-1.png" alt="baxter-of-california-img-1" width="460px" height="498px">
 				</div>
 
 				<div class="product-img_shadow product-img_float">
-					<img src="img/baxter-of-california-img-2.png" alt="baxter-of-california-img-2">
+					<img src="img/baxter-of-california-img-2.png" alt="baxter-of-california-img-2" width="140px" height="149px">
 				</div>
 
 				<div class="product-img-secondary_size product-img_shadow product-img_float">
-					<img src="img/baxter-of-california-img-3.png" alt="baxter-of-california-img-3">
+					<img src="img/baxter-of-california-img-3.png" alt="baxter-of-california-img-3" width="140px" height="149px">
 				</div>
 
 				<div class="product-img_shadow product-img_float">
-					<img src="img/baxter-of-california-img-4.png" alt="baxter-of-california-img-4">
+					<img src="img/baxter-of-california-img-4.png" alt="baxter-of-california-img-4" width="140px" height="149px">
 				</div>
+				<div class="clearfix"></div>
 			</div>
 
 			<!-- Product img end -->
@@ -73,7 +75,10 @@
 			<!-- Product and information begin -->
 
 			<div class="product-information product-information_size product-information_text">
-				<p>Есть в наличии<span class="product-information__article_text">Артикул: DEXTER-AE</span></p>
+				<div class="product-information__in-stock-article">
+				<span class="product-information__in-stock_text">Есть в наличии</span>
+				<span class="product-information__article_text">Артикул: DEXTER-AE</span>
+				</div>
 
 				<p class="product-information__description_size product-information__description_text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
 				</p>

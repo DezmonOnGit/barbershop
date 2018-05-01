@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no"> <!-- Отключение выделения номеров телефона плагином skype в Microsoft edge -->
 	<title>Барбершоп «Бородинский»</title>
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -12,13 +14,13 @@
 
 		<header class="header header_size header__btn_text">
 			<div class="container">	
-				<ul>
-					<li><a class="header__btn header__btn_size" href="#"><span class="header__btn_current-page">Главная</span></a></li>
-					<li><a class="header__btn header__btn_size" href="#">Информация</a></li>
-					<li><a class="header__btn header__btn_size" href="#">Новости</a></li>
-					<li><a class="header__btn header__btn_size" href="barbershop-price.html">Прайс-лист</a></li>
-					<li><a class="header__btn header__btn_size" href="barbershop-shop.html">Магазин</a></li>
-					<li><a class="header__btn header__btn_size" href="#">Контакты</a></li>
+				<ul class="header__menu">
+					<li class="header__btn header__btn_size"><a href="#"><span class="header__btn_current-page">Главная</span></a></li>
+					<li class="header__btn header__btn_size"><a href="#">Информация</a></li>
+					<li class="header__btn header__btn_size"><a href="#">Новости</a></li>
+					<li class="header__btn header__btn_size"><a href="barbershop-price.html">Прайс-лист</a></li>
+					<li class="header__btn header__btn_size"><a href="barbershop-shop.html">Магазин</a></li>
+					<li class="header__btn header__btn_size"><a href="#">Контакты</a></li>
 				</ul>
 				<a class="header__btn header__btn_size header__btn_align header__btn__icon-login" href="#">Вход</a>
 				<div class="clearfix"></div>
@@ -32,7 +34,7 @@
 				<!-- Logo begin -->
 
 				<div class="logo logo_size">
-					<img src="img/logo.png" alt="Logo_img">
+					<img src="img/logo.png" alt="Logo_img" width="363px" height="158px">
 				</div>
 
 				<!-- Logo end -->
@@ -61,7 +63,6 @@
 							не дает определеный статус?
 						</p>
 					</div>
-					<div class="clearfix"></div>
 				</div>
 
 				<!-- Description end -->
@@ -84,16 +85,16 @@
 							</p>
 							<p class="news_date">19 сентября</p>
 						</div>
-						<a href="#"><div class="news-photo__btn news-photo__btn_size news-photo__btn_text">Все новости</div></a>	
+						<a href="#" class="news-photo__btn news-photo__btn_size news-photo__btn_text">Все новости</a>	
 					</div>
 					<div class="news-photo-line">
-						<img src="img/news-photo-line.png" alt="line-img">
+						<img src="img/news-photo-line.png" alt="line-img" width="8px" height="278px">
 					</div>
 					<div class="photo photo_size photo_text">
 						<h3>Фотогалерея</h3>
 						<br>
 						<div class="photo_img">
-							<img src="img/photo-img.png" alt="photo_img">
+							<img src="img/photo-img.png" alt="photo_img" width="286px" height="164px">
 						</div>
 						<a href="#"><div class="news-photo__btn photo__btn_size photo__btn_size_back news-photo__btn_text  news-photo__btn_float">Назад</div></a>
 						<a href="#"><div class="news-photo__btn photo__btn_size photo__btn_size_next news-photo__btn_text news-photo__btn_float">Вперед</div></a>
@@ -122,7 +123,7 @@
 						<a href="#"><div class="contacts__btn contacts__btn_size contacts__btn_text contacts__btn_margin-left contacts__btn_float">Обратная связь</div></a>
 					</div>
 					<div class="news-photo-line">
-						<img src="img/news-photo-line.png" alt="line-img">
+						<img src="img/news-photo-line.png" alt="line-img" width="8px" height="278px">
 					</div>
 					<div class="sign-up sign-up_size sign-up_text">
 						<form>

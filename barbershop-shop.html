@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no"> <!-- Отключение выделения номеров телефона плагином skype в Microsoft edge -->
 	<title>Барбершоп «Бородинский»</title>
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper barbershop-background-white">
@@ -39,10 +41,10 @@
 
 			<!-- Bread crumps begin -->
 
-			<ul class="bread-crumbs bread-crumbs_text bread-crumbs_size bread-crumbs_display-none-shop">
+			<ul class="breadcrumbs breadcrumbs_text breadcrumbs_size">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Магазин</a></li>
-				<li><a href="#"><span class="bread-crumbs_text_grey">Средства для ухода</span></a></li>
+				<li><a href="#"><span class="breadcrumbs_text_grey">Средства для ухода</span></a></li>
 			</ul>
 			<div class="clearfix"></div>
 
@@ -53,7 +55,7 @@
 			<div class="manufacturers-group-of-product manufacturers-group-of-product_text manufacturers-group-of-product_size">
 				<form>
 					<div class="manufacturers">
-						<h3>Производители:</h3>
+						<p>Производители:</p>
 						<ul>
 							<li><input type="checkbox" name="manufacturers_1" id="manufacturers_1" checked><label for="manufacturers_1">Baxter of California</label></li>
 							<li><input type="checkbox" name="manufacturers_2" id="manufacturers_2"><label for="manufacturers_2">Mr Natty</label></li>
@@ -64,8 +66,7 @@
 						</ul>
 					</div>
 					<div class="group-of-product">
-						<h3>Группы товаров:</h3>
-						
+						<p>Группы товаров:</p>
 						<ul>
 							<li><input type="radio" name="group-of-product" id="group-of-product_1" checked><label for="group-of-product_1">Бритвенные принадлежности</label></li>
 							<li><input type="radio" name="group-of-product" id="group-of-product_2"><label for="group-of-product_2">Средства для ухода</label></li>
@@ -83,106 +84,83 @@
 			<div class="goods goods_size goods_text">
 				<div class="goods__block goods__block_size">
 					<a href="#">
-						<div class="goods-for-travels__img"></div>
+						<img src="img/goods-for-travels.png" alt="goods-for-travels_img" width="220px" height="165px">
 					</a>
 
-					<a href="#" class="goods__block__description-hover">
-						<span class="goods__block__name">Набор для путешествий</span>
-						<span class="goods__block__manufacturer">«Baxter of California»</span>
+					<a href="#" class="goods__block__name-manufacturer goods__block__description-hover">Набор для путешествий<br>
+						<span class="goods__block__manufacturer">«Baxter of California»</span>	
 					</a>
-
-					<ul>
-						<li>2 900 руб.</li>
-						<li><a href="barbershop-item.html">Купить</a></li>
-					</ul>
-				</div>
-				<div class="goods__block goods__block_size">
-					<a href="#">
-						<div class="moisturizing-conditioner__img"></div>
-					</a>
-
-					<a href="#" class="goods__block__description-hover">
-						<span class="goods__block__name">Увлажняющий кондиционер</span>
-						<span class="goods__block__manufacturer">«Baxter of California»</span>
-					</a>
-
-					<ul>
-						<li>750 руб.</li>
-						<li><a href="#">Купить</a></li>
-					</ul>
+					<div class="goods__block__cost">2 900 руб.</div>
+					<a href="barbershop-item.html" class="goods__block__btn-buy">Купить</a>
 				</div>
 
 				<div class="goods__block goods__block_size">
 					<a href="#">
-						<div class="hair-gel__img"></div>
+						<img src="img/moisturizing-conditioner.png" alt="moisturizing-conditioner_img" width="220px" height="165px">
 					</a>
 
-					<a href="#" class="goods__block__description-hover">
-						<span class="goods__block__name">Гель для волос</span>
-						<span class="goods__block__manufacturer">«Sauvecito»</span>
+					<a href="#" class="goods__block__name-manufacturer goods__block__description-hover">Увлажняющий кондиционер<br>
+						<span class="goods__block__manufacturer">«Baxter of California»</span>	
 					</a>
-
-					<ul>
-						<li>290 руб.</li>
-						<li><a href="#">Купить</a></li>
-					</ul>
+					<div class="goods__block__cost">750 руб.</div>
+					<a href="#" class="goods__block__btn-buy">Купить</a>
 				</div>
 
 				<div class="goods__block goods__block_size">
 					<a href="#">
-						<div class="clay-for-hair__img"></div>
-					</a>
-					<a href="#" class="goods__block__description-hover">
-						<span class="goods__block__name">Глина для укладки волос</span>
-						<span class="goods__block__manufacturer">«American crew»</span>
+						<img src="img/hair-gel.png" alt="hair-gel_img" width="220px" height="165px">
 					</a>
 
-					<ul>
-						<li>500 руб.</li>
-						<li><a href="#">Купить</a></li>
-					</ul>
+					<a href="#" class="goods__block__name-manufacturer goods__block__description-hover">Гель дял волос<br>
+						<span class="goods__block__manufacturer">«Sauvecito»</span>	
+					</a>
+					<div class="goods__block__cost">290 руб.</div>
+					<a href="#" class="goods__block__btn-buy">Купить</a>
 				</div>
 
 				<div class="goods__block goods__block_size">
 					<a href="#">
-						<div class="hair-gel-2__img"></div>
-					</a>
-					<a href="#" class="goods__block__description-hover">
-						<span class="goods__block__name">Гель для волос</span>
-						<span class="goods__block__manufacturer">«American crew»</span>
+						<img src="img/clay-for-hair.png" alt="clay-for-hair_img" width="220px" height="165px">
 					</a>
 
-					<ul>
-						<li>300 руб.</li>
-						<li><a href="#">Купить</a></li>
-					</ul>
+					<a href="#" class="goods__block__name-manufacturer goods__block__description-hover">Глина для укладки волос<br>
+						<span class="goods__block__manufacturer">«American Crew»</span>	
+					</a>
+					<div class="goods__block__cost">500 руб.</div>
+					<a href="#" class="goods__block__btn-buy">Купить</a>
 				</div>
 
 				<div class="goods__block goods__block_size">
 					<a href="#">
-						<div class="shaving-kit__img"></div>
-					</a>
-					<a href="#" class="goods__block__description-hover">
-						<span class="goods__block__name">Набор для бритья</span>
-						<span class="goods__block__manufacturer">«Baxter of California»</span>
+						<img src="img/hair-gel-2.png" alt="air-gel-2_img" width="220px" height="165px">
 					</a>
 
-					<ul>
-						<li>3 900 руб.</li>
-						<li><a href="#">Купить</a></li>
-					</ul>
+					<a href="#" class="goods__block__name-manufacturer goods__block__description-hover">Гель дял волос<br>
+						<span class="goods__block__manufacturer">«American Crew»</span>	
+					</a>
+					<div class="goods__block__cost">300 руб.</div>
+					<a href="#" class="goods__block__btn-buy">Купить</a>
+				</div>
+
+				<div class="goods__block goods__block_size">
+					<a href="#">
+						<img src="img/shaving-kit.png" alt="air-gel-2_img" width="220px" height="165px">
+					</a>
+
+					<a href="#" class="goods__block__name-manufacturer goods__block__description-hover">Набор для бритья<br>
+						<span class="goods__block__manufacturer">«Baxter of California»</span>	
+					</a>
+					<div class="goods__block__cost">3 900 руб.</div>
+					<a href="#" class="goods__block__btn-buy">Купить</a>
 				</div>
 			</div>
 			<div class="clearfix"></div>
-
-			<!-- Goods end -->
-
 			<!-- Button page for goods begin -->
 
 			<div class="btn-page-for-goods btn-page-for-goods_text btn-page-for-goods_size">
 				<ul>
 					<li><a href="#">1</a></li>
-					<li><a href="#"><span class="btn-page-for-goods__current-page">2</span></a></li>
+					<li><a href="#" class="btn-page-for-goods__current-page">2</a></li>
 					<li><a href="#">3</a></li>
 					<li><a href="#">4</a></li>
 				</ul>
@@ -190,7 +168,10 @@
 
 			<!-- Button page for goods end -->
 
+			<div class="clearfix"></div>
 		</div>
+
+		<!-- Goods end -->
 
 		<!-- Footer begin -->
 
