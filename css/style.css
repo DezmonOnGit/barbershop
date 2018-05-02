@@ -227,8 +227,8 @@ HEADER(MENU).........2
 	display: inline-block;
 }
 
-.header__btn_align {
-	float: none !important;
+.header__btn_float {
+	float: left;
 }
 
 .header__btn__icon-login:hover:before {
@@ -236,7 +236,7 @@ HEADER(MENU).........2
 	display: inline-block;
 	width: 18px;
 	height: 16px;
-	margin-right: 5px;
+	margin-right: 20px;
 	vertical-align: middle;
 	background: url(../img/icon-login-hover.png);
 }
@@ -246,7 +246,6 @@ HEADER(MENU).........2
 	height: calc(70px - 25px);
 	padding-top: 25px;
 	margin-right: 12px;
-	float: left;
 
 }
 
@@ -762,21 +761,29 @@ FOOTER...............7
 	font-family: "PT Sans Narrow", "Arial", sans-serif;
 }
 
+
 .footer__vk-fb_size {
+	display: inline-block;
 	width: 143px;
 	margin: 62px 130px 0 70px; 
 }
 
-.footer__vk_size {
+.footer__icons:after {
+	display: block;
+	width: 100%;
+	clear: both;
+}
+.footer__icon_size {
 	width: 43px;
 	height: calc(43px - 8px);
 	padding-top: 8px;
-	margin: 0 3px 0 0;
+	margin-right: 4px;
+	margin-bottom: 4px;
 	background: black;
 	float: left;
 }
 
-.footer__vk_size:hover {
+.footer__icon_size:hover {
 	background: white;
 	color: black;
 }
@@ -788,39 +795,11 @@ FOOTER...............7
 	text-align: center;
 }
 
-.footer__f_size {
-	width: 43px;
-	height: calc(43px - 8px);
-	padding-top: 8px;
-	margin: 0 3px 0 3px;
-	background: black;
-	float: left;
-}
-
-.footer__f_size:hover {
-	background: white;
-	color: black;
-}
-
 .footer__f_text {
 	font-family: "fontello", sans-serif;
 	color: white;
 	font-size: 25px;
 	text-align: center;
-}
-
-.footer__instagram_size {
-	width: 43px;
-	height: calc(43px - 8px);
-	padding-top: 8px;
-	margin: 0 0 0 3px;
-	background: black;
-	float: left;
-}
-
-.footer__instagram_size:hover {
-	background: white;
-	color: black;
 }
 
 .footer__instagram_text {
@@ -1733,15 +1712,12 @@ GOODS................19
 	cursor: pointer;
 }
 
-.btn-page-for-goods a:active {
+.btn-page-for-goods a:focus {
 	background: white;
 	color: black;
 }
 
-.btn-page-for-goods__current-page {
-	background: white !important;
-	color: black !important;
-}
+
 
 /*
 ***********************
